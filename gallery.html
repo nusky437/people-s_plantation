@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>People's Development Plantation | Gallery</title>
+  <link rel="icon" type="image/png" href="images/pdplogo.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="gallery">
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <img src="images/pdplogo-gif-bgremove.gif" alt="Loading" class="preloader-gif">
+      <p class="preloader-text">Loading...</p>
+    </div>
+  </div>
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="images/pdplogo-txtwhite.png" alt="PDP logo" class="header-logo-mark">
+        <!-- <span class="logo-text">People's Development Plantation</span> -->
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" data-page="home">Home</a></li>
+        <li><a href="about.html" data-page="about">About</a></li>
+        <li><a href="services.html" data-page="services">Services</a></li>
+        <li><a href="gallery.html" data-page="gallery">Gallery</a></li>
+        <li><a href="contact.html" data-page="contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page-shell">
+    <div class="page-hero gallery-hero">
+      <img src="images/gcoverimage.jpg" alt="Gallery">
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-text">
+        <span class="section-tag">Visual Stories</span>
+        <h1>Our Gallery</h1>
+      </div>
+    </div>
+
+    <section class="gallery-section container">
+      <div class="section-header">
+        <span class="section-tag">In Pictures</span>
+        <h2>Working Landscapes</h2>
+        <p class="section-sub">This gallery highlights plantation environments, agri-tech tools, irrigation work, and harvest moments across our focus areas.</p>
+      </div>
+      <div class="gallery-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="farms">Farms</button>
+        <button class="filter-btn" data-filter="tech">Agri-Tech</button>
+        <button class="filter-btn" data-filter="harvest">Harvest</button>
+        <button class="filter-btn" data-filter="irrigation">Irrigation</button>
+      </div>
+      <div class="gallery-grid" id="gallery-grid"></div>
+    </section>
+
+    <section class="content-band content-band-soft">
+      <div class="container editorial-layout">
+        <div class="editorial-copy fade-in">
+          <span class="section-tag">What You'll See</span>
+          <h2>A Visual Record of <em>Real Plantation Work</em></h2>
+          <p>This gallery is meant to show more than attractive landscapes. It reflects the practical side of plantation operations: field organization, crop care, irrigation systems, harvest movement, and the visual details that influence agricultural quality.</p>
+          <p>Together, these images tell the story of how plantation work progresses from cultivation to monitoring and from field activity to production-ready outcomes. They help make our approach more visible, grounded, and real.</p>
+        </div>
+        <div class="editorial-media fade-in delay-1">
+          <img src="https://images.unsplash.com/photo-1468581264429-2548ef9eb732?w=1200&q=80" alt="Wide plantation field view">
+        </div>
+      </div>
+    </section>
+
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+      <button class="lb-close" onclick="closeLightbox()">X</button>
+      <img id="lb-img" src="" alt="">
+      <p id="lb-caption"></p>
+    </div>
+  </main>
+
+  <footer id="main-footer">
+    <div class="footer-top container">
+      <div class="footer-brand">
+        <img src="images/pdplogo-txtwhite.png" alt="PDP logo" class="footer-logo-mark">
+        <!-- <span class="logo-text">People's Development Plantation</span> -->
+        <p>Rooted in nature, growing the future with sustainable agriculture solutions.</p>
+        <div class="social-links footer-social-links" aria-label="Social media links">
+          <a href="https://www.facebook.com/" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.9.3-1.6 1.7-1.6h1.5V4.8c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 4V11H8v3h2.5v8h3z"/></svg>
+          </a>
+          <a href="https://x.com/" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="X">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 3H21l-4.6 5.3L22 21h-4.8l-3.8-5-4.4 5H7l4.9-5.7L2 3h4.9l3.5 4.6L14.5 3h4.4zm-1.7 16h1.3L8.1 4.9H6.7L17.2 19z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 7.2c-.2-.9-.9-1.7-1.8-1.9C18.2 5 12 5 12 5s-6.2 0-7.8.3c-.9.2-1.6 1-1.8 1.9C2 8.8 2 12 2 12s0 3.2.4 4.8c.2.9.9 1.7 1.8 1.9 1.6.3 7.8.3 7.8.3s6.2 0 7.8-.3c.9-.2 1.6-1 1.8-1.9.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8zM10 15.5v-7l6 3.5-6 3.5z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="services.html">Organic Farming</a></li>
+          <li><a href="services.html">Irrigation Systems</a></li>
+          <li><a href="services.html">AI Crop Monitoring</a></li>
+          <li><a href="services.html">Agri-Tech Consulting</a></li>
+          <li><a href="services.html">Export and Supply Chain</a></li>
+        </ul>
+      </div>
+      <div class="footer-map">
+        <h4>Find Us</h4>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.7985085714384!2d79.8550!3d6.9271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae259251b6b3beb%3A0x46cedc44b90b7b5a!2sColombo%207%2C%20Sri%20Lanka!5e0!3m2!1sen!2sus!4v1" width="100%" height="140" style="border:0;border-radius:10px;opacity:0.85;" loading="lazy"></iframe>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>&copy; 2026 People's Development Plantation. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="#" onclick="return openModal('terms')">Terms & Conditions</a>
+        <a href="#" onclick="return openModal('privacy')">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/94112345678" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 3.9A11.8 11.8 0 0 0 12 .8C5.9.8 1 5.7 1 11.8c0 1.9.5 3.8 1.5 5.4L1 23.2l6.2-1.6a11 11 0 0 0 4.8 1.1h.1c6.1 0 11-4.9 11-11 0-2.9-1.1-5.6-3.1-7.8zm-8 16.9h-.1a9 9 0 0 1-4.6-1.3l-.3-.2-3.7 1 1-3.6-.2-.4a9 9 0 1 1 8 4.5zm5-6.7c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1l-.9 1c-.2.2-.4.2-.7.1-1.9-1-3.2-2.7-3.5-3.2-.2-.3 0-.5.1-.7l.7-.8.2-.4c.1-.1.1-.4 0-.5l-.9-2.1c-.2-.4-.5-.4-.7-.4h-.6c-.2 0-.5.1-.7.4-.8.7-1.2 1.7-1.2 2.8 0 .3.1.7.2 1 .6 2 1.8 3.8 3.4 5.2.5.5 1.1.9 1.7 1.3 1 .5 2.1.9 3.3 1 .7.1 1.5 0 2.1-.4.5-.3 1.3-1.2 1.4-1.8.1-.6.1-1.2 0-1.4-.1-.2-.3-.3-.6-.4z"/></svg>
+  </a>
+
+  <div class="modal-backdrop" id="modal-backdrop" onclick="closeModal()"></div>
+  <div class="modal" id="modal-terms">
+    <button class="modal-close" onclick="closeModal()">X</button>
+    <div class="modal-header">
+      <img src="images/pdplogo-txtwhite.png" alt="PDP logo" class="modal-logo">
+      <h2>Terms & Conditions</h2>
+    </div>
+    <div class="modal-body"><p>Standard business terms apply to all website usage and service inquiries.</p></div>
+  </div>
+  <div class="modal" id="modal-privacy">
+    <button class="modal-close" onclick="closeModal()">X</button>
+    <div class="modal-header">
+      <img src="images/pdplogo-txtwhite.png" alt="PDP logo" class="modal-logo">
+      <h2>Privacy Policy</h2>
+    </div>
+    <div class="modal-body"><p>We protect submitted personal information and use it only for support and communication.</p></div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
