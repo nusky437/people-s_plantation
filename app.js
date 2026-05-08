@@ -16,7 +16,7 @@ const galleryImages = [
   { src: 'https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=700&q=80', caption: 'Terraced Farming', category: 'farms' },
   { src: 'https://images.unsplash.com/photo-1598300056393-4aac492f4344?w=700&q=80', caption: 'Fresh Harvest', category: 'harvest' },
   { src: 'https://images.unsplash.com/photo-1550989460-0adf9ea622e2?w=700&q=80', caption: 'Sprinkler System', category: 'irrigation' },
-  { src: 'https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=700&q=80', caption: 'Seed Planting', category: 'farms' },
+  // { src: 'https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=700&q=80', caption: 'Seed Planting', category: 'farms' },
 ];
 
 function seedDemoReviews() {
